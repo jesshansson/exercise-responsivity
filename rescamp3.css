@@ -1,0 +1,76 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100vh;
+  color: white;
+}
+
+.logo {
+  background-color: #480162;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  background-color: #b3008a ;
+  padding: 1rem 10rem;
+  border-radius: 40px;  
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin: 2.2rem;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 1rem;
+}
+.articles article {
+  background-color: #fe96a8;
+  margin: .2rem;
+  padding: 2rem;
+}
+
+.asides aside {
+  background-color: #f32dae;
+  margin: .2rem;
+  padding: 2rem;
+}
+
+footer {
+  background-color: #c1c99a;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+nav, main {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  margin: 0.5rem;
+}
+
+.articles {
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+.asides {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+}
