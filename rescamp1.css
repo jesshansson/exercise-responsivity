@@ -1,6 +1,9 @@
 body {
   margin: .5rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -16,12 +19,13 @@ article {
 
 aside {
   background-color: #fe96a8;
-  margin: .5rem 0;;
+  margin: .5rem 0;
 }
 
 footer {
   background-color: #c1c99a;
   padding: 2rem;
+  margin-top: auto;
 }
 
 main {
